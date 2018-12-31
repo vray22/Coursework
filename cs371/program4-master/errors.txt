@@ -1,0 +1,7 @@
+errors in circle
+scale wasn't calculating correctly figured out by scale case
+move by had the wront offset settings for y solved by the simple move test
+
+errors in circle2
+had to swap the parameters for super x then y
+the simple move and simplemovneg test helped find this. 

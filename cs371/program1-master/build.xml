@@ -1,0 +1,20 @@
+<project default="compile">
+<target name = "compile" depends="clean">
+    <javac srcdir="." destdir="./" includeantruntime="false" fork="true"/>
+</target>
+
+<target name="jar" depends="compile">
+    <mkdir dir="build/jar"/>
+    <jar destfile="build/jar/WebServer.jar" basedir="./">
+      <manifest>
+         <attribute name="Main-Class" value="WebServer"/>
+      </manifest>
+     </jar>
+   </target>
+<target name="run" depends="jar">
+      <java jar="build/jar/WebServer.jar" fork="true"/>
+    </target>
+<target name="clean">
+	<delete file="WebServer.class"/>
+</target>
+</project>

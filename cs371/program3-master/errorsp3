@@ -1,0 +1,1 @@
+An error I found was testing if a null args was passed which can't be passed in a .xml file. 
