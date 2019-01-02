@@ -1,0 +1,1 @@
+test both quicksort and quickhoare to see which is faster one deals with boundary checks  
